@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>The Value Of Letting It Go</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Raymond Chandler III </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/code.html">code</a></li>
+                    <li><a href="/category/games.html">games</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/value-of-letting-it-go.html" rel="bookmark"
+           title="Permalink to The Value Of Letting It Go">The Value Of Letting It Go</a></h1>
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="@raymondchandler">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-06-22T12:00:00-04:00">
+                Published: Mon 22 June 2015
+        </abbr>
+		<br />
+        <abbr class="modified" title="2015-06-22T12:00:00-04:00">
+                Updated: Mon 22 June 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/raymond-chandler-iii.html">Raymond Chandler III</a>
+        </address>
+<p>In <a href="/category/code.html">code</a>.</p>
+
+</footer><!-- /.post-info -->      <h1>The Value Of Letting It Go</h1>
+<p>So here I am again trying desperately to explain to my client, why their
+critisims of my code, although warranted are also, not important. With this
+particular client, we've come to an impasse where no code can enter the code
+base until the entire team has picked it apart and searched for perfection
+within. They think this is good, because it prevents bad code from entering
+the codebase, but what they don't realize that this process is an 
+absolutely horrible way to approach software development. I'll explain.</p>
+<h1>From Fear Through The Eyes of Madness</h1>
+<p>At some point in this project's past, this client had a real big problem with
+code quality. There is some pretty clear indication in the code base
+that a few people went on wild refactoring missions that ended up Javaizing
+code. That would be fine, if the codebase was written in Java but it's not.
+This particular code is an amalgamation of Python and Bash. Java idioms have
+no place within it. There is also evidence in the code base that Test Driven 
+Development was not a huge thing when the project first started, and has 
+gradually moved to be more test driven.</p>
+<p>At some point along the line, the team decided enough was enough and that they
+were tired of code entering the codebase that had any potential to break anything.</p>
+<p>So they implemented Code Reviews.</p>
+<hr />
+<p>In general I'm a big fan of code reviews when they are used as a touchpoint 
+within the team. Code reviews have a big benefit of saying "Hey, this is what I 
+worked on. This is what I changed." It gives the who, what, when, where, and why
+about changes to the code. It also allows other members of the team to ask 
+questions about the code. "Why did you write it that way?" and "What does 
+that function do?" It can become a platform for teaching. All of this is 
+important for the purposes of communication and skill growth within the team.</p>
+<p>But that is not how this client uses Code Reviews and I suspect, this isn't how
+most teams use code reviews.</p>
+<p>This team uses code reviews as a gatekeeper to block changes to the codebase. If
+someone on the team doesn't agree with an implementation then it is discussed and
+argued over until a compromise is made. Suggestions are offered like:</p>
+<div class="highlight"><pre><span class="o">-</span> <span class="s2">&quot;Use feature X of the language rather than feature Y here.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;Don&#39;t write tests like that.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;This should be a global variable.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;This shouldn&#39;t be a global variable.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;We should use the visitor pattern here rather than a decorator.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;Using a generator here doesn&#39;t make sense. It&#39;s YAGNI.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;This function should be extracted into another class.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;Singletons should NEVER have state.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;That variable name needs changed to Z because it isn&#39;t descriptive enough.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;Write it this way ... not that way because of X, Y, and Z.&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;Deriving a class in this way violates Liskov Substitution Principals&quot;</span>
+<span class="o">-</span> <span class="s2">&quot;This code has more than one responsibility.&quot;</span>
+</pre></div>
+
+
+<p>If you are on a team like mine, then these suggestions probably seem reasonable to you,
+and they should. The dangerous thing about this, is that these suggestions are 
+often not-wrong. There is a lot of give and take when it comes to writing software. Good
+code in one case, is bad code, or at least sub-optimal code in another, and having feedback
+from the team is one way to increasing the quality of the code. It's good to do code reviews
+like this because it prevents this bad code from entering the codebase at all, right? </p>
+<hr />
+<p>Wrong. Code reviews like the ones with the suggestions above are harmful.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://www.collidr.io">Collidr</a></li>
+                            <li><a href="https://boardgamegeek.com/boardgame/168895/corrupted-kingdoms">Corrupted Kingdoms</a></li>
+                            <li><a href="http://www.pyohio.org/">PyOhio</a></li>
+                            <li><a href="http://www.cohpy.org/">Columbus Python</a></li>
+                            <li><a href="http://www.meetup.com/columbus-rs/">Columbus Rust Society</a></li>
+                            <li><a href="http://columbusrb.com/">Columbus Ruby Brigade</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://twitter.com/raymondchandler">Twitter</a></li>
+                            <li><a href="https://github.com/kitanata">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/kitanata">LinkedIn</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
